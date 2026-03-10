@@ -13,19 +13,11 @@ use App\Http\Middleware\LogAcessoMiddleware;
 |
 */
 
-Route::get('/', [App\Http\Controllers\Principal::class, 'principal']);
-
-Route::get('/mencao', [App\Http\Controllers\Professor::class, 'mencao']);
-Route::get('/boletim', [App\Http\Controllers\Aluno::class, 'boletim']);
-Route::get('/login', [App\Http\Controllers\Aluno::class, 'login']);
-Route::get('/logout', [App\Http\Controllers\Aluno::class, 'logout']);
-Route::get('/frequencia', [App\Http\Controllers\Aluno::class, 'frequencia']);
-Route::get('/login', [App\Http\Controllers\Professor::class, 'login']);
-Route::get('/logout', [App\Http\Controllers\Professor::class, 'logout']);
-Route::get('/rematricula', [App\Http\Controllers\ALuno::class, 'rematricula']);
-Route::get('/alunos', [App\Http\Controllers\Professor::class, 'alunos']);
-Route::get('/consultar-mencao', [App\Http\Controllers\ALuno::class, 'consultar-mencao']);
-
-
-
-
+Route::get('/', [App\Http\Controllers\Principal::class, 'index'])->name('principal');
+Route::get('/Sobre', [App\Http\Controllers\Principal::class, 'sobre'])->name('sobre');
+Route::get('/Contato', [App\Http\Controllers\Principal::class, 'contato'])->name('contato');
+Route::get('/Cursos', [App\Http\Controllers\Principal::class, 'cursos'])->name('cursos');
+Route::get('/Desenvolvimento-Sistemas', [App\Http\Controllers\Principal::class, 'ds'])->name('ds');
+Route::get('/Administracao', [App\Http\Controllers\Principal::class, 'adm'])->name('adm');
+Route::get('/Meio-Ambiente', [App\Http\Controllers\Principal::class, 'ma'])->name('ma');
+Route::get('/Mecatronica', [App\Http\Controllers\Principal::class, 'meca'])->name('meca');
