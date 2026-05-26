@@ -9,6 +9,6 @@ class CursoModel extends Model
 {
     use HasFactory;
     protected $table = 'curso';
-    protected $fillable = ['nome'];
-    protected $fillable = ['periodo'];
+    protected $fillable = ['nome', 'periodo'];
+    
 }
