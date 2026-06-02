@@ -8,6 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class ComponenteModel extends Model
 {
     use HasFactory;
-    protected $table = 'administrador';
+    protected $table = 'componente';
     protected $fillable = ['nome', 'hora_inicio', 'hora_fim'];
 }

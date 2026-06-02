@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 class AlunoController extends Controller
 {
     function index(){ 
-        return view('aluno.index');
+        $alunos = new \App\Models\AlunoModel();
+        return view('aluno.index', ['alunos'=>$alunos::all()]);
     }
 
     function add(Request $dados) {
@@ -22,7 +23,8 @@ class AlunoController extends Controller
         $aluno = new \App\Models\AlunoModel();
         $aluno::destroy($id);
 
-        return view('aluno.index', ['success'=>'Removido!', 'alunos'=>$aluno::all()]);
+        $alunos = new \App\Models\AlunoModel();
+        return view('aluno.index', ['success'=>'Removido!', 'alunos'=>$alunos::all()]);
     }
 
     function atualizar(string $id) {
@@ -37,6 +39,7 @@ class AlunoController extends Controller
         $aluno = $aluno::find($dados->id);
         $aluno->update($dados->all());
 
-        return view('aluno.index', ['success'=>'Atualizado!', 'alunos'=>$aluno::all()]);
+        $alunos = new \App\Models\AlunoModel();
+        return view('aluno.index', ['success'=>'Atualizado!', 'alunos'=>$alunos::all()]);
     }
 }
