@@ -6,8 +6,8 @@
         <label for="nome">Nome</label>
         <input type="text" name="nome" id="nome" value="{{ $curso->nome }}">
 
-        <label for="curso">Curso</label>
-        <input type="text" name="curso" id="curso" value="{{ $curso->curso }}">
+        <label for="periodo">Período</label>
+        <input type="text" name="periodo" id="periodo" value="{{ $curso->periodo }}">
 
         <button type="submit">Salvar</button>
         @isset($success)
