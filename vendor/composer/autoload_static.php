@@ -547,6 +547,7 @@ class ComposerStaticInitbfe12996eeecb6fdc8713a9fd9d431f8
         'App\\Http\\Requests\\StoreTesteRequest' => __DIR__ . '/../..' . '/app/Http/Requests/StoreTesteRequest.php',
         'App\\Models\\LogAcesso' => __DIR__ . '/../..' . '/app/Models/LogAcesso.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
+        'App\\Models\\aluno' => __DIR__ . '/../..' . '/app/Models/aluno.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
         'App\\Providers\\BroadcastServiceProvider' => __DIR__ . '/../..' . '/app/Providers/BroadcastServiceProvider.php',
